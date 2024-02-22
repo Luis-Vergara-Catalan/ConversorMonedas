@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Conversor de monedas</h2>
+        <div class="card">
+            <h3>Monto a convertir</h3>
+            <input type="number" class="monedaEstilo" id="inputMoneda" placeholder="Igrese el monto en CLP"/>
+            <h3>Moneda a convertir</h3>
+            <select class="select-monedaEstilo" id="moneda-select">
+                <option disabled selected>Seleccione moneda</option>
+                <option id="dolar" value="dolar">Dolar</option>
+                <option id="uf" value="uf">UF</option>
+            </select> 
+            <button class="button" id="button" type="button">Buscar</button>
+            <div>
+                <canvas class="Chartclass" id="myChart"></canvas> 
+                <h5><span id="spanId"></span></h5>
+            </div>
+        </div>  
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
